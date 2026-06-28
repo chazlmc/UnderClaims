@@ -1,0 +1,10 @@
+#      __   __                                       ___           ___
+#     |  | |  |,--,--,  ,-|  | ,---. ,--.--.'  .--./|  |    ,--,--.`--',--,--,--. ,---.
+#     |  | |  ||      \' .-. || .-. :|  .--'|  |    |  |   ' ,-.  |,--.|        |(  .-'
+#     '  '-'  '|  ||  |\ `-' |\   --.|  |   '  '--'\|  '--.\ '-'  ||  ||  |  |  |.-'  `)
+#      `-----' `--''--' `---'  `----'`--'    `-----'`-----' `--`--'`--'`--`--`--'`----'
+# A _Chazl (Github: chazlmc) Plugin
+
+#[Version Control]
+version: "1.0-SNAPSHOT" #DO NOT TOUCH
+auto-update: true #Automatically Update the Software in the plugin. Not recommended for large servers

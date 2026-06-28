@@ -6,6 +6,8 @@ public final class UnderClaims extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        getLogger().info("Starting UnderClaims,");
+        getLogger().info("An _Chazl plugin");
         // Plugin startup logic
     }
 
