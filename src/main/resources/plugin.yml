@@ -1,6 +1,23 @@
+#Basic Info
 name: UnderClaims
 version: '${version}'
+author: '_Chazl (Github: chazlmc)'
+description: 'A full-featured claims plugin. Fork of OverClaims.'
+website: 'https://www.github.com/chazlmc/UnderClaims'
+
+prefix: UClaims
+softdepend: [PlaceholderAPI, Vault]
 
 main: com.github.chazlmc.underClaims.UnderClaims
 api-version: '26.2'
 load: POSTWORLD
+
+#Commands
+commands:
+  ping:
+    description: 'Recieve a Pong! (Test command.)'
+    aliases: [pingpong, nettest]
+    permission: underclaims.nettest
+    permission-message: 'You do NOT have permission to test the network!'
+
+#Permissions
