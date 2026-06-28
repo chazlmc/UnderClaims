@@ -51,18 +51,59 @@
   </build>
 
   <repositories>
+      <!-- PaperMC Repository -->
       <repository>
         <id>papermc-repo</id>
         <url>https://repo.papermc.io/repository/maven-public/</url>
       </repository>
+      <!-- Vault Repository -->
+      <repository>
+          <id>jitpack.io</id>
+          <url>https://jitpack.io</url>
+      </repository>
+      <!-- PlaceholderAPI Repository -->
+      <repository>
+          <id>placeholderapi</id>
+          <url>https://repo.helpch.at/releases/</url>
+      </repository>
   </repositories>
 
-  <dependencies>
-    <dependency>
-      <groupId>io.papermc.paper</groupId>
-      <artifactId>paper-api</artifactId>
-      <version>[26.2.build,)</version>
-      <scope>provided</scope>
-    </dependency>
-  </dependencies>
+    <dependencies>
+        <!-- Force upgrade to patch CVE-2025-48924 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.18.0</version> <!-- Or higher -->
+        </dependency>
+        <!-- Force upgrade to patch CVE-2025-67030 -->
+        <dependency>
+            <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-utils</artifactId>
+            <version>3.6.1</version> <!-- Or higher -->
+        </dependency>
+
+        <!-- Paper Dependencies -->
+        <dependency>
+            <groupId>io.papermc.paper</groupId>
+            <artifactId>paper-api</artifactId>
+            <version>[26.2.build,)</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- Vault API -->
+        <dependency>
+            <groupId>com.github.MilkBowl</groupId>
+            <artifactId>VaultAPI</artifactId>
+            <version>1.7.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- PlaceholderAPI -->
+        <dependency>
+            <groupId>me.clip</groupId>
+            <artifactId>placeholderapi</artifactId>
+            <version>2.12.2</version>
+            <scope>provided</scope>
+        </dependency>
+
+    </dependencies>
 </project>
