@@ -1,0 +1,6 @@
+name: UnderClaims
+version: '${version}'
+
+main: com.github.chazlmc.underClaims.UnderClaims
+api-version: '26.2'
+load: POSTWORLD
